@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+                  android:id="@+id/cardview"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="16dp"
+                  android:layout_marginRight="16dp"
+                  android:layout_marginTop="16dp"
+                  android:layout_marginBottom="16dp"
+                  android:clickable="true"
+                  android:background="?android:selectableItemBackground"
+                  app:cardElevation="10dp"
+                  xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      >
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="40dp"
+                         android:gravity="center_vertical"
+                          android:background="@color/colorPrimary"
+                         android:paddingLeft="25dp">
+
+
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Product Details"
+                              android:textColor="#ffff"
+                              android:id="@+id/matchtitle" />
+                      </LinearLayout>
+
+
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:background="@android:color/darker_gray" />
+                      <LinearLayout
+                          style="@style/sub_linearlayout_in_listview_phonedescription"
+                          android:weightSum="3.0"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                          <TextView
+                              style="@style/heading_in_listview_phonedescription"
+                              android:layout_weight="1.45"
+                              android:layout_width="0.0dip"
+                              android:id="@+id/idheading"
+                              android:text="Product Id"
+                              android:textSize="15.0sp"/>
+                          <TextView
+                              style="@style/detail_in_listview_phonedescription"
+                              android:layout_weight="1.55"
+                              android:layout_width="0.0dip"
+                              android:text="product id"
+                              android:id="@+id/productid"
+                              android:textStyle="italic"/>
+                      </LinearLayout>
+                      <LinearLayout
+                          style="@style/sub_linearlayout_in_listview_phonedescription"
+                          android:weightSum="3.0"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                          <TextView
+                              style="@style/heading_in_listview_phonedescription"
+                              android:layout_weight="1.45"
+                              android:layout_width="0.0dip"
+                              android:id="@+id/nameheading"
+                              android:text="Name"
+                              android:textSize="15.0sp"/>
+                          <TextView
+                              style="@style/detail_in_listview_phonedescription"
+                              android:layout_weight="1.55"
+                              android:layout_width="0.0dip"
+                             android:text="product name"
+                              android:id="@+id/name"
+                              android:textStyle="italic"/>
+                      </LinearLayout>
+                      <LinearLayout
+                          style="@style/sub_linearlayout_in_listview_phonedescription"
+                          android:weightSum="3.0"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                         <TextView
+                             style="@style/heading_in_listview_phonedescription"
+                              android:layout_weight="1.45"
+                              android:layout_width="0.0dip"
+                              android:id="@+id/priceheading"
+                              android:text="Price"
+                              android:textSize="15.0sp"/>
+                              <TextView
+                             style="@style/detail_in_listview_phonedescription"
+                              android:layout_weight="1.55"
+                              android:layout_width="0.0dip"
+                              android:id="@+id/price"
+                              android:text="product price"
+                              android:textStyle="italic"/>
+                     </LinearLayout>
+                      <LinearLayout
+                          style="@style/sub_linearlayout_in_listview_phonedescription"
+                          android:weightSum="3.0"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                         <TextView
+                              style="@style/heading_in_listview_phonedescription"
+                              android:layout_weight="1.45"
+                             android:layout_width="0.0dip"
+                             android:id="@+id/Weightheading"
+                             android:text="Weight"
+                             android:textSize="15.0sp"/>
+                          <TextView
+                              style="@style/detail_in_listview_phonedescription"
+                              android:layout_weight="1.55"
+                              android:layout_width="0.0dip"
+                              android:id="@+id/weight"
+                              android:text="product weight"
+                             android:textStyle="italic"/>
+                      </LinearLayout>
+                      <LinearLayout
+                          style="@style/sub_linearlayout_in_listview_phonedescription"
+                          android:weightSum="3.0"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                          <TextView
+                              style="@style/heading_in_listview_phonedescription"
+                              android:layout_weight="1.45"
+                              android:layout_width="0.0dip"
+                              android:id="@+id/catorgeryheading"
+                              android:text="Catorgery"
+                              android:textSize="15.0sp"/>
+                          <TextView
+                              style="@style/detail_in_listview_phonedescription"
+                              android:layout_weight="1.55"
+                              android:layout_width="0.0dip"
+                              android:id="@+id/catorgery"
+                              android:text="productcatorgery"
+                              android:textStyle="italic"/>
+                      </LinearLayout>
+                  </LinearLayout>
+              </android.support.v7.widget.CardView>
+              </RelativeLayout>
+

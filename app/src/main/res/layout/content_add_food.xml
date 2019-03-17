@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Add_food"
+    tools:showIn="@layout/activity_add_food">
+    <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="290dp"
+                  android:src="@drawable/upload"
+                  android:id="@+id/productimg"
+                  android:scaleType="centerCrop"
+                  android:layout_below="@+id/toolbar"
+                  android:layout_alignParentEnd="true" />
+
+
+              <Button
+                  android:text="Insert"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/upload_btn"
+                  android:layout_margin="16dp"
+                  android:layout_below="@+id/productcatorgeryselector"
+                  />
+
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="textPersonName"
+                  android:hint="Enter Name for the product"
+                  android:id="@+id/productnametxt"
+                  android:layout_below="@+id/productimg"
+                  android:layout_margin="16dp" />
+
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="number"
+                  android:id="@+id/pricetxt"
+                  android:hint="Enter Price for product"
+                  android:layout_below="@+id/productnametxt"
+                  android:layout_margin="16dp" />
+
+
+              <EditText
+                  android:id="@+id/productquantitytxt"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/pricetxt"
+                  android:inputType="number"
+                  android:layout_margin="16dp"
+                  android:hint="Enter Quantity"
+                  />
+                 <EditText
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:id="@+id/productweighttxt"
+                     android:layout_margin="16dp"
+                     android:hint="Enter Product Weight"
+                     android:layout_below="@+id/productquantitytxt"
+                     />
+              <Spinner
+                  android:id="@+id/productcatorgeryselector"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="16dp"
+                  android:entries="@array/Catorgeries"
+                  android:layout_below="@+id/productweighttxt"
+                  />
+
+
+          </RelativeLayout>
+
+    </ScrollView>

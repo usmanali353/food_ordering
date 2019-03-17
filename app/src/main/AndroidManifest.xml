@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="usmanali.food_ordering">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".menu_page"
+            android:label="@string/title_activity_menu_page"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".food_detail"
+            android:label="@string/title_activity_food_detail"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Billing_Activity"
+            android:label="@string/title_activity_billing_"
+            android:parentActivityName=".Cart_page"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".food_list_page"
+            android:label="@string/title_activity_food_list_page"
+            android:parentActivityName=".menu_page"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="usmanali.food_ordering.menu_page" />
+        </activity>
+        <activity
+            android:name=".Cart_page"
+            android:label="@string/title_activity_cart_page"
+            android:parentActivityName=".menu_page"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Orders_page"
+            android:label="@string/title_activity_orders_page"
+            android:parentActivityName=".menu_page"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Add_food"
+            android:label="@string/title_activity_add_food"
+            android:parentActivityName=".menu_page"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="usmanali.food_ordering.menu_page" />
+        </activity>
+        <activity
+            android:name=".order_details"
+            android:label="@string/title_activity_order_details"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Edit_food_detail"
+            android:label="@string/title_activity_edit_food_detail"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

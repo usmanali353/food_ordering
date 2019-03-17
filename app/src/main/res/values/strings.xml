@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Food_Ordering</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_menu_page">menu_page</string>
+    <string name="title_activity_food_detail">food_detail</string>
+    <string name="title_activity_billing_">Your Bill</string>
+    <string name="title_activity_food_list_page">food_list_page</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="title_activity_cart_page">Shopping Cart</string>
+    <string name="title_activity_orders_page">Your Orders</string>
+    <string name="title_activity_add_food">Add_food</string>
+    <string-array name="Catorgeries">
+        <item>Select Catorgery</item>
+        <item>Cold Drinks</item>
+        <item>Hot Drinks</item>
+        <item>Breakfast</item>
+        <item>Main Course</item>
+    </string-array>
+    <string name="title_activity_order_details">Order Detail</string>
+    <string name="title_activity_edit_food_detail">Edit Food Detail</string>
+
+</resources>

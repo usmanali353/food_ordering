@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/all_orders"
+    android:title="All Orders"
+    android:icon="@drawable/delivery_truck"
+    />
+    <item
+        android:id="@+id/add_food"
+        android:title="Add Food"
+        android:icon="@drawable/ic_add_box_black_24dp"
+        />
+    <item
+        android:id="@+id/log_out"
+        android:title="Sign Out"
+        android:icon="@drawable/logout"
+        />
+</menu>
